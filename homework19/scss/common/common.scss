@@ -1,0 +1,43 @@
+
+.container {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 15px;
+  color: #999999;
+}
+
+.wrapper-main {
+  max-width: $width-main;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.element-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+
+a {
+  color: #000000;
+
+}
+
+.d-flex {
+  display: flex;
+}
+
+@media (max-width: 1380px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+

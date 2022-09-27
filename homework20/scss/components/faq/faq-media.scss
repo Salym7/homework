@@ -1,0 +1,33 @@
+.faq {
+  @media (max-width: $breakpoint-md) {
+    &__accordion-body-item {
+      padding: 0 10px 0 20px;
+    }
+    &__accordion-body-text {
+      width: 60%;
+    }
+  }
+  @media (max-width: $breakpoint-sm) {
+    & {
+      padding: 100px 0;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 1;
+    }
+    &__accordion-header {
+      margin: 20px 10px 20px 40px;
+    }
+    &__accordion-body-text {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &__accordion-body-item {
+      flex-direction: column
+    }
+    &__accordion-body-link {
+      width: 100%;
+      font-size: 15px;
+    }
+  }
+}

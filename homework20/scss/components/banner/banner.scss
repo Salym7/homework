@@ -1,0 +1,110 @@
+.banner {
+  $banner-color: #3D4F9F;
+  background: #F4F7FF; //linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+  height: calc(100vh - #{$header_height});
+  position: relative;
+  min-height: 550px;
+
+  &:before,
+  &:after {
+    @extend %bg-default;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before {
+    background-image: url("../assets/clouds.svg");
+    z-index: 1;
+  }
+
+  &:after {
+    background-image: url("../assets/chart.svg");
+    z-index: 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 2;
+    padding-top: 14vh;
+    height: 100%;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__title-wrapper {
+    gap: 28px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: $font-ms;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: $banner-color;
+  }
+
+  &__title {
+    font-family: $font-quicksand;
+    font-weight: 300;
+    font-size: $font-xlll;
+    line-height: 48px;
+    color: $banner-color;
+  }
+
+  &__description {
+    max-width: 665px;
+    margin: 0 auto;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+  }
+
+
+  &__play {
+    margin-top: 20px;
+
+    a {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background-color: #fff;
+      box-shadow: 0 10px 50px rgba(201, 209, 231, 0.6);
+      margin: 0 auto;
+    }
+  }
+
+
+  &__controls {
+    gap: 12px;
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-item {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #D1D6E3;
+
+      &:hover,
+      &-active {
+        background-color: #5283FF;
+        transition: .3s;
+        cursor: pointer;
+      }
+
+    }
+
+
+  }
+
+}
+

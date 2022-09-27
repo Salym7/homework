@@ -1,0 +1,42 @@
+.features {
+
+
+  @media (max-width: $breakpoint-md) {
+    & {
+      padding-top: 70px;
+      margin-bottom: 70px;
+    }
+    &__title {
+      margin-bottom: 50px;
+    }
+    &__items {
+      margin-bottom: 70px;
+    }
+  }
+  @media (max-width: $breakpoint-sm) {
+    &__line-between {
+      display: none;
+    }
+    &__box {
+      width: 45%;
+    }
+    .row {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__box-img {
+      margin-bottom: 10px;
+    }
+    &__box-title {
+      margin-bottom: 10px;
+      font-size: $font-lg;
+    }
+    &__box-text {
+      font-size: $font-md;
+    }
+  }
+
+}

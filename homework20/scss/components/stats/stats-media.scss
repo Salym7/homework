@@ -1,0 +1,27 @@
+.stats {
+  @media (max-width: $breakpoint-lg) {
+    &__customers,
+    &__users {
+      padding: 30px 50px;
+    }
+  }
+
+
+  @media (max-width: $breakpoint-sm) {
+    .row {
+      flex-direction: column;
+    }
+    &__customers,
+    &__users {
+      width: 100%;
+    }
+    &__inner:before,
+    &__inner:after {
+      display: none;
+    }
+    &__customers {
+      text-align: left;
+    }
+  }
+
+}

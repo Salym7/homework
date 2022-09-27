@@ -1,0 +1,115 @@
+.features {
+  padding-top: 170px;
+  margin-bottom: 170px;
+  position: relative;
+
+  &:before {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/clouds-features.svg");
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  &__intro-title {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: $font-lgm;
+    margin-bottom: 90px;
+  }
+
+  &__items {
+    margin-bottom: 120px;
+  }
+
+  &__box {
+    width: 140px;
+
+
+    &-img {
+      margin-bottom: 25px;
+    }
+
+    &-title {
+      margin-bottom: 25px;
+      color: $features-color;
+      font-weight: 700;
+    }
+
+    &-text {
+      font-size: $font-msm;
+      font-weight: 500;
+    }
+
+
+  }
+
+  &__line-between {
+    width: 28px;
+    height: 1px;
+    background: #DAE4FE;
+    margin-top: 125px;
+  }
+
+  &__link {
+    gap: 30px;
+
+    &-or {
+      position: relative;
+      font-size: $font-msm;
+      font-family: $font-open-sans;
+      text-transform: uppercase;
+    }
+
+    &-more {
+      background: #FFD7D7;
+      font-size: $font-smm;
+      color: #D43F3F;
+      padding: 10px 16px;
+    }
+
+    &-started {
+      background: $bg-link;
+      color: $title-color;
+      padding: 10px 16px;
+      font-size: $font-smm;
+    }
+
+
+    &-or:after {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 1px;
+      background: $features-color-line;
+      top: 10px;
+      left: 23px;
+    }
+
+    &-or:before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 1px;
+      top: 10px;
+      right: 23px;
+      background: $features-color-line;
+    }
+  }
+}

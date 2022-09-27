@@ -1,0 +1,64 @@
+.header {
+  font-family: $font;
+
+  .aside {
+    padding-top: 40px;
+    padding-right: 40px;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 40px 50px;
+    font-size: 17px;
+
+    &-left,
+    &-right {
+      width: 100%;
+    }
+  }
+
+  &__link-row {
+    gap: 30px
+  }
+
+  &__list {
+    gap: 42px;
+  }
+
+  &__item {
+    padding: 4px 0;
+  }
+
+  .active, &__item:hover {
+
+    border-bottom: 3px solid #000;
+  }
+
+
+  .header__basket, .header__person {
+    margin: 4px 0;
+  }
+
+  .header__search {
+    border: none;
+    font-family: $font;
+    font-size: 17px;
+    padding: 4px 10px;
+    width: 100%;
+  }
+
+  .header__form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .header__store-row {
+    gap: 25px;
+  }
+
+  &__menu-btn {
+    display: none;
+  }
+
+}

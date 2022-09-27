@@ -1,0 +1,41 @@
+.quotes {
+  @media (max-width: $breakpoint-lgm) {
+    &__message {
+      padding: 40px;
+    }
+  }
+  @media (max-width: $breakpoint-md) {
+    & {
+      padding: 50px 0;
+    }
+    &__content {
+      width: 100%;
+      text-align: center;
+    }
+    .row {
+      flex-direction: column;
+    }
+    &__message {
+      width: 80%;
+      margin: 30px auto 60px;
+    }
+    &__message-text {
+      width: 100%;
+    }
+  }
+  @media (max-width: $breakpoint-sm) {
+    &__title {
+      line-height: 1;
+    }
+    &__message {
+      width: 90%;
+      padding: 30px;
+    }
+
+  }
+  @media (max-width: $breakpoint-xs) {
+    &__message {
+      width: 95%;
+    }
+  }
+}

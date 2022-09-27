@@ -1,0 +1,167 @@
+body {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: $font-md;
+  color: $accent-color;
+  line-height: 1.8;
+}
+
+main {
+  margin-top: $header-height;
+}
+
+.container-mdm,
+.container-lg,
+.container-md,
+.container-sd {
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-lg {
+  max-width: $container-lg-width;
+}
+
+.container-mdm {
+  max-width: $container-mdm-width;
+}
+
+.container-md {
+  max-width: $container-md-width;
+}
+
+.container-sd {
+  max-width: $container-sd-width
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+}
+
+
+.list-unstyled {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.intro-title {
+  font-size: $font-ms;
+  font-family: $main-font;
+  font-weight: 500;
+  color: $title-color;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: $font-quicksand;
+  font-weight: 500;
+  color: $title-color;
+
+}
+
+.controls {
+  &-circles {
+    background: $blog-bg-circles;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  &-circles-active,
+  &-circles:hover {
+    background: $blog-bg-circles-active;
+    transition: .3s;
+    cursor: pointer;
+  }
+}
+
+
+.features {
+  @media (max-width: $breakpoint-xl) {
+
+    .container-sd {
+      max-width: 550px;
+    }
+  }
+}
+
+.stats {
+  @media (max-width: $breakpoint-sm) {
+    .container-sd {
+      padding: 0;
+    }
+  }
+}
+
+.blog {
+  @media (max-width: $breakpoint-xl) {
+    .container-mdm {
+      max-width: $container-md-width;
+    }
+  }
+  @media (max-width: $breakpoint-lg) {
+    .container-mdm {
+      max-width: $breakpoint-md;
+    }
+  }
+
+
+}
+

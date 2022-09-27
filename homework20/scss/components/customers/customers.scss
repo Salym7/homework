@@ -1,0 +1,20 @@
+.customers {
+  padding: 60px 0;
+  border-bottom: 1px solid #D8E3FE;
+
+
+  &__menu {
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  &__link:hover svg path {
+    fill: #5982E7;
+    transition: 0.3s;
+  }
+}

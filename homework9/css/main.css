@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.item {
+    width: 50%;
+    float: left;
+    padding-left: 150px;
+    margin-bottom: 30px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.content-header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.inform {
+    width: 400px;
+
+}
+
+.inform1 {
+    position: relative;
+}
+
+.inform1:before {
+    background: url("../images/icon1.png");
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    left: -75px;
+}
+
+.inform2 {
+    position: relative;
+}
+
+.inform2:before {
+    background: url("../images/icon2.png");
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    left: -75px;
+}
+
+.inform3 {
+    position: relative;
+}
+
+.inform3:before {
+    background: url("../images/icon3.png");
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    left: -75px;
+}
+
+.inform4 {
+    position: relative;
+}
+
+.inform4:before {
+    background: url("../images/icon4.png");
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    left: -75px;
+}
+
+.inform5 {
+    position: relative;
+}
+
+.inform5:before {
+    background: url("../images/icon5.png");
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    left: -75px;
+}
+
+.inform6 {
+    position: relative;
+}
+
+.inform6:before {
+    background: url("../images/icon6.png");
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: left;
+    left: -75px;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header p {
+    margin: 0;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+
+}
+
+.content-block h3 {
+    margin: 19px 0;
+    font-size: 19px;
+    font-weight: bold;
+}

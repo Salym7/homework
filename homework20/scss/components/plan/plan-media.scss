@@ -1,0 +1,50 @@
+.plan {
+
+  @media (max-width: $breakpoint-xl) {
+    &__example {
+      width: 60%;
+    }
+    &__text {
+      width: 340px;
+    }
+  }
+  @media (max-width: $breakpoint-lg) {
+    & {
+      padding: 50px 0;
+    }
+    &__manage {
+      width: 100%;
+      text-align: center;
+    }
+    &__example {
+      width: 100%;
+    }
+    &__text {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .row {
+      flex-wrap: wrap;
+    }
+    &__btn {
+      margin-bottom: 30px;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+  @media (max-width: $breakpoint-sm) {
+    & {
+      padding: 20px 0;
+    }
+    &__title {
+      line-height: 1;
+      font-size: $font-xll;
+    }
+    &__text {
+      font-size: $font-mdm;
+    }
+  }
+
+
+}

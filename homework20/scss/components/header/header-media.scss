@@ -1,0 +1,120 @@
+.header {
+  &__media-menu-btn {
+    display: none;
+  }
+
+
+  @media (min-width: $media-header) {
+    [for="media-menu-btn"] {
+      display: none;
+    }
+
+    .hidden-desktop {
+      display: none;
+    }
+
+  }
+
+
+  @media (max-width: $media-header) {
+    & {
+      min-height: $header_height;
+      max-height: $header_height;
+    }
+
+    &__social-cta {
+      display: none;
+    }
+
+    .row {
+      justify-content: space-between;
+    }
+
+    nav {
+      z-index: 100;
+      box-shadow: 0px 13px 14px -11px rgb(0, 0, 0, 62%);
+    }
+
+    &__wrapper {
+      position: relative;
+    }
+
+
+    &__social {
+      width: initial;
+    }
+
+    & [for="media-menu-btn"] {
+      background: $bg-link;
+      border-radius: 2px;
+      padding: 13px 21px;
+      color: $color-link;
+      font-size: $font-smm;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &__navigation {
+      width: 18%;
+      min-width: 140px;
+      gap: 30px;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+
+      nav {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: $header_height;
+        left: 0;
+        background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+
+        ul {
+          flex-direction: column;
+          gap: 0;
+
+          a {
+            display: block;
+            text-align: center;
+            font-size: $font-lg;
+
+            &:hover {
+              color: white !important;
+              background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+              transition: .3s;
+            }
+
+            &:hover:not(.active) {
+
+              transform: scale(1);
+            }
+
+            &.active:hover {
+              transform: scale(1);
+            }
+          }
+        }
+
+
+      }
+    }
+    &__media-menu-btn {
+      &:checked {
+        & + nav {
+          display: initial;
+        }
+      }
+    }
+
+  }
+
+  @media (max-width: $media-header-400) {
+    &__navigation {
+      gap: 20px;
+    }
+    &__social-icons ul {
+      gap: 25px;
+    }
+  }
+}

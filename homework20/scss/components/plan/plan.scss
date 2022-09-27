@@ -1,0 +1,64 @@
+.plan {
+  background: #F5F8FF;
+  padding: 170px 0;
+  overflow: hidden;
+  border-bottom: 1px solid #D8E3FE;
+
+  &__manage {
+    padding-top: 30px;
+    width: 50%;
+  }
+
+  &__example {
+    width: 50%;
+  }
+
+  &__intro-title {
+    margin-bottom: 10px;
+    padding-left: 5px;
+  }
+
+  &__title {
+    font-size: $font-xl;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    width: 400px;
+  }
+
+  &__btn {
+    font-family: $font-quicksand;
+    font-size: $font-smm;
+
+    &-view {
+      color: $white-color;
+      background: $btn-color;
+      border: none;
+      font-weight: bold;
+      padding: 10px 26px;
+      cursor: pointer;
+    }
+
+    &-view:hover {
+      background: $accent-color;
+      transition: .3s;
+    }
+
+    &-see {
+      color: #ADB4D2;
+      padding: 9px 25px;
+      border: 1px solid #ADB4D2;
+      background: inherit;
+      cursor: pointer;
+    }
+
+    &-see:hover {
+      background: $accent-color;
+      transition: .3s;
+    }
+
+
+  }
+}

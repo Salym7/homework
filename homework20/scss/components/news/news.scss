@@ -1,0 +1,48 @@
+.news {
+  padding: 115px 0;
+
+  &__content {
+    max-width: 300px
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-family: $main-font;
+    font-size: 14px;
+  }
+
+  &__form {
+    gap: 14px;
+  }
+
+  &__form-input {
+    width: 279px;
+    height: 59px;
+    background: #EFEFF7;
+    border-radius: 5px;
+    border: none;
+    padding: 0 23px;
+  }
+
+  &__form-btn {
+    color: $white-color;
+    width: 184px;
+    height: 59px;
+    border-radius: 5px;
+    background: #4D6CE1;
+    box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+    border: none;
+    cursor: pointer;
+  }
+
+  &__form-btn:hover {
+    background: #C4C6D0FF;
+  }
+
+  border-bottom: 1px solid #DAE4FE;
+}

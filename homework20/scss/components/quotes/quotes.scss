@@ -1,0 +1,49 @@
+.quotes {
+  background: #EAF0FF;
+  padding: 110px 0;
+
+  &__content {
+    width: 333px;
+  }
+
+  &__intro-title {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: $font-xl;
+  }
+
+
+  &__message {
+    background: $white-color;
+    padding: 41px 71px 53px;
+    margin-bottom: 78px;
+    border: 1px solid #D8E3FE;
+
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      background: url("../assets/testimonials-ava.png");
+      width: 62px;
+      height: 62px;
+      right: calc(50% - 31px);
+      bottom: -30px;
+
+    }
+
+
+    &-text {
+      width: 280px;
+      font-size: 14px;
+      line-height: 24px;
+
+    }
+
+  }
+}
+
+
